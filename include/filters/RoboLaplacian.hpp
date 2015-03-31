@@ -5,6 +5,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
 
-cv::Mat roboLaplacian(cv::Mat image, cv::Mat * channels, int ddepth, int sharpen_ksize, int scale, int delta);
+void roboLaplacian(cv::Mat& image, int ddepth, int sharpen_ksize, int scale, int delta);
 
 #endif

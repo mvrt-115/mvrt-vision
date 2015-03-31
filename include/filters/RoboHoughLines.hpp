@@ -5,6 +5,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
 
-cv::Mat roboHoughLines(cv::Mat in, int rho, int theta, int threshold, int lineMin, int maxGap);
+void roboHoughLines(cv::Mat& in, int rho, int theta, int threshold, int lineMin, int maxGap);
 
 #endif

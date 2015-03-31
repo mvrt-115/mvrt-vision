@@ -5,6 +5,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
 
-cv::Mat roboDilateErode(cv::Mat in, int holes, int noise, cv::Mat element);
+void roboDilateErode(cv::Mat& in, cv::Mat& element, int holes, int noise);
 
 #endif
