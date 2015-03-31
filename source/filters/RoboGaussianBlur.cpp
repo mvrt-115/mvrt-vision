@@ -1,4 +1,4 @@
-#include "RoboGaussianBlur.h"
+#include "filters/RoboGaussianBlur.h"
 
 cv::Mat roboGaussianBlur(cv::Mat in, int blur_ksize, int sigmaX, int sigmaY) 
 {

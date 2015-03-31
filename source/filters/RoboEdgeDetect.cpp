@@ -1,4 +1,4 @@
-#include "RoboEdgeDetect.h"
+#include "filters/RoboEdgeDetect.h"
 
 cv::Mat roboEdgeDetect(cv::Mat image, cv::Mat * channels, int edge_ksize, int threshLow, int threshHigh)
 {
