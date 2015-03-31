@@ -3,7 +3,7 @@
 void roboLaplacian(cv::Mat& image, int ddepth, int sharpen_ksize, int scale, int delta)
 {
     cv::Mat *dst = new cv::Mat();
-    cv::Mat *channels = new cv::Mat();
+    cv::Mat channels[3];
 
 	cv::cvtColor(image, *dst, cv::COLOR_RGB2GRAY); // HSV to grayscale
   	cv::Laplacian(*dst, *dst, ddepth, sharpen_ksize, scale, delta, cv::BORDER_DEFAULT);

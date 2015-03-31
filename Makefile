@@ -14,7 +14,7 @@ LIB = -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_objdetect
 CPPSRCS = $(wildcard src/*.cpp) $(wildcard src/*/*.cpp)
 SRCS = $(CPPSRCS) $(CSRCS)
 
-CFLAGS_DEBUG = -D_LAZER_DEBUG
+CFLAGS_DEBUG = -g -D_LAZER_DEBUG
 OBJS_DEBUG = $(patsubst src/%.cpp,obj/%-dbg.o, $(SRCS))
 CFLAGS_RELEASE = -O3 -Wno-unused-value
 OBJS_RELEASE = $(patsubst src/%.cpp,obj/%.o,$(SRCS))
